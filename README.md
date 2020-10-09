@@ -2,7 +2,7 @@
 
 <h4>Write a Node.js API using Express to work with recipes in MongoDB</h4>
 
-**NOTE** - This repository is labeled **hacktoberfest** or will be accepted for Hacktoberfest only till 13th October 2020 11:59 PM IST
+**NOTE** - This repository is labeled **hacktoberfest** or will be accepted for Hacktoberfest only till 30th October 2020 11:59 PM IST
 
 <hr>
 
