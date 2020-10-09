@@ -10,9 +10,9 @@
 
 <ol>
 <li>Fork this repository and clone in onto your machine.</li>
+<li>Check this out <a href="https://docs.mongodb.com/manual/administration/install-community/">Installing MongoDB Community Edition</a> to install MongoDB onto your system. Use MongoDB Compass to view your data, if you're unfamiliar with the mongo commands.</li>
 <li>Run <code>npm install</code> or <code>yarn install</code> to install the required dependencies.</li>
 <li>Run <code>npm start</code> or <code>yarn start</code></li>
-<li>Check this out <a href="https://docs.mongodb.com/manual/administration/install-community/">Installing MongoDB Community Edition</a> to install MongoDB onto your system. Use MongoDB Compass to view your data, if you're unfamiliar with the mongo commands.</li>
 <li>Check out the <b>Projects</b> tab for features to be added.</li>
 </ol>
 
