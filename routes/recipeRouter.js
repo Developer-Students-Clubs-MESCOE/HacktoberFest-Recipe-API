@@ -9,13 +9,13 @@ db.connect();
 recipeRouter.get('/', db.getAll);
 
 /* TODO: GET a particular recipe by ID. */
-recipeRouter.get('/:id', db.getOne);
+recipeRouter.get('/:id', db.getByID);
 
 /* TODO: DELETE all recipes || USE WITH CAUTION ||. */
 recipeRouter.delete('/', db.deleteAll);
 
 /* TODO: DELETE a particular recipe by ID. */
-recipeRouter.delete('/:id', db.deleteOne);
+recipeRouter.delete('/:id', db.deleteByID);
 
 /* TODO: UPDATE a particular recipe by ID. */
 recipeRouter.patch('/:id', db.updateByID);

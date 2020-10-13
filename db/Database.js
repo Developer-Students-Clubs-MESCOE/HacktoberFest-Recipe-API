@@ -33,7 +33,7 @@ class Database {
 		})
 	}
 
-	getOne = function (req, res) {
+	getByID = function (req, res) {
 		Recipe.find({ _id: req.params.id }, function (err, result) {
 			if (err) {
 				res.send(err);
@@ -53,7 +53,7 @@ class Database {
 		})
 	}
 
-	deleteOne = function (req, res) {
+	deleteByID = function (req, res) {
 		Recipe.findOneAndDelete({ _id: req.params.id }, function (err) {
 			if (err) {
 				res.send(err);
