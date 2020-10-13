@@ -1,22 +1,27 @@
 const express = require('express');
 const recipeRouter = express.Router();
+const db = require('../db/Database');
 
-// HINT: Use the methods you'll create in Database.js here
+/* Create Connection */
+db.connect();
 
 /* TODO: GET all recipes. */
-recipeRouter.get('/', function(req, res, next) {
-  res.send('Gets all recipes');
-});
+recipeRouter.get('/', db.getAll);
 
 /* TODO: GET a particular recipe by ID. */
+recipeRouter.get('/:id', db.getOne);
 
 /* TODO: DELETE all recipes || USE WITH CAUTION ||. */
+recipeRouter.delete('/', db.deleteAll);
 
 /* TODO: DELETE a particular recipe by ID. */
+recipeRouter.delete('/:id', db.deleteOne);
 
 /* TODO: UPDATE a particular recipe by ID. */
+recipeRouter.patch('/:id', db.updateByID);
 
 /* TODO: POST a new recipe. */
+recipeRouter.post('/', db.insert);
 
 /* TODO: Get 3 recipes by rating (highest). */
 
